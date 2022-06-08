@@ -1,0 +1,85 @@
+[{
+    "investorId": 1,
+    "investmentAccount": "TB1",
+    "balance": "300"
+}, {
+    "investorId": 1,
+    "investmentAccount": "GBB",
+    "balance": "50.9999"
+}, {
+    "investorId": 1,
+    "investmentAccount": "MS1",
+    "balance": "2000"
+}, {
+    "investorId": 1,
+    "investmentAccount": "28D",
+    "balance": "10"
+}, {
+    "investorId": 2,
+    "investmentAccount": "GBB",
+    "balance": "5"
+}, {
+    "investorId": 2,
+    "investmentAccount": "28D",
+    "balance": "1000"
+}, {
+    "investorId": 2,
+    "investmentAccount": "MS1",
+    "balance": "20"
+}, {
+    "investorId": 2,
+    "investmentAccount": "RS1",
+    "balance": "92.5999"
+}, {
+    "investorId": 3,
+    "investmentAccount": "TB1",
+    "balance": "84.2"
+}, {
+    "investorId": 3,
+    "investmentAccount": "GBB",
+    "balance": "170.2374"
+}, {
+    "investorId": 3,
+    "investmentAccount": "MS1",
+    "balance": "250.3"
+}, {
+    "investorId": 3,
+    "investmentAccount": "28D",
+    "balance": "0.0111"
+}, {
+    "investorId": 3,
+    "investmentAccount": "RS1",
+    "balance": "1"
+}, {
+    "investorId": 4,
+    "investmentAccount": "TB1",
+    "balance": "720"
+}, {
+    "investorId": 4,
+    "investmentAccount": "GBB",
+    "balance": "500"
+}, {
+    "investorId": 4,
+    "investmentAccount": "28D",
+    "balance": "100"
+}, {
+    "investorId": 4,
+    "investmentAccount": "RS1",
+    "balance": "720"
+}, {
+    "investorId": 5,
+    "investmentAccount": "RS1",
+    "balance": "100000"
+}, {
+    "investorId": 6,
+    "investmentAccount": "MS1",
+    "balance": "1000.0001"
+}, {
+    "investorId": 6,
+    "investmentAccount": "28D",
+    "balance": "1000"
+}, {
+    "investorId": 6,
+    "investmentAccount": "RS1",
+    "balance": "1000"
+}]
