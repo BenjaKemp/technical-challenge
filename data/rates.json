@@ -1,0 +1,22 @@
+[
+    {
+        "investmentAccount": "TB1", 
+        "annualRate": 4.25
+    },
+    {
+        "investmentAccount": "GBB", 
+        "annualRate": 4.05
+    },
+    {
+        "investmentAccount": "MS1", 
+        "annualRate": 3.75
+    },
+    {
+        "investmentAccount": "28D", 
+        "annualRate": 6.25
+    },
+    {
+        "investmentAccount": "RS1", 
+        "annualRate": 5.62
+    }
+]
