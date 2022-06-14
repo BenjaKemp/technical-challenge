@@ -1,15 +1,40 @@
-# P2P Interest Payments Exercise (Pre-interview)
+# Peer-to-Peer Interest Payments Exercise
 
-Each morning at The P2P Investments Company, a batch job puts all the investors’ holdings for the previous day into a single log file of:
-'investor id','account id','balance in GBP'
+This is the technical challenge for candidates applying for an engineering role at Assetz Capital.
 
-Another batch job puts the daily interest rate of each account into another log file of:
-'account id','daily % rate'
+Feel free to use any libraries/packages that you wish and remember the goal of this challenge is to assess your technical ability, and you should write it as if this could potentially be used in a production environment.
 
-However, there is a promotion on where each investor’s highest balance account has an additional 0.01% daily interest applied to the daily rate before the interest is paid.
 
 ## Task
 
-Write an application in Node.js/TypeScript that when run will parse the holdings.csv and rates.csv files and print out the total portfolio value for each customer after daily interest has been paid. You can use any libraries you wish to, treat this an application that would be used in production (assume infrastructure is provided).
+Write an application in TypeScript that:
+* Processes the investor holdings (`holdings.json`) and investment account rates (`rates.json`) data
+* Applies a promotion, whereby each investor’s highest balance account has an additional 1% interest per annum applied to the annualised rate.
+* Then print/output the total portfolio value for each investor after daily interest (and the promotion) has been paid.
+* [BONUS] - Add an alternative promotion of your choosing
 
-When you come in for interview, you will be given a pair-programming exercise (using Microsoft Teams) to add a feature to your program. During this exercise we are going to analyze your code structure, your problem-solving approach, and your ability to discuss your thought processes as you implement the feature.
+
+### Additional Information
+
+The investor holdings are located in `/data/holdings.json` with the format:
+```
+{
+    "investorId": string,
+    "investmentAccount": string,
+    "balance": string
+}
+```
+
+The investment account rates are located in `/data/rates.json` with the format:
+```
+{
+    "investmentAccount": string, 
+    "annualRate": number
+}
+```
+
+
+## Submitting Your Task
+
+1. Please answer the questions in [FOLLOW-UP.md](./FOLLOW-UP.md) file
+2. Then you can submit your application by adding [@mhouchin](https://github.com/mhouchin), [@frenomus](https://github.com/frenomus), [@jonokercher1](https://github.com/jonokercher1) and [@JamesWhite6](https://github.com/JamesWhite6) as collaborators to your GitHub repository, or by emailing as a .zip (_remember to exclude node_modules_).
