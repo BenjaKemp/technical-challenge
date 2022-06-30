@@ -2,13 +2,13 @@
 
 This is the technical challenge for candidates applying for an engineering role at Assetz Capital.
 
-Feel free to use any libraries/packages that you wish and remember the goal of this challenge is to assess your technical ability, and you should write it as if this could potentially be used in a production environment.
+Feel free to use any libraries/packages that you wish and remember the goal of this challenge is to assess your technical ability, and you should write it as if this could potentially be used in a production environment and you may choose to include automated tests.
 
 
 ## Task
 
 Write an application in TypeScript that:
-* Processes the investor holdings (`holdings.json`) and investment account rates (`rates.json`) data
+* Processes the investor holdings (`holdings.json`) and investment account rates (`rates.json`) data on a __daily__ basis
 * Applies a promotion, whereby each investor’s highest balance account has an additional 1% interest per annum applied to the annualised rate.
 * Then print/output the total portfolio value for each investor after daily interest (and the promotion) has been paid.
 * [BONUS] - Add an alternative promotion of your choosing
