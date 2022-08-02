@@ -37,4 +37,4 @@ The investment account rates are located in `/data/rates.json` with the format:
 ## Submitting Your Task
 
 1. Please answer the questions in [FOLLOW-UP.md](./FOLLOW-UP.md) file
-2. Then you can submit your application by adding [@mhouchin](https://github.com/mhouchin), [@frenomus](https://github.com/frenomus), [@jonokercher1](https://github.com/jonokercher1) and [@JamesWhite6](https://github.com/JamesWhite6) as collaborators to your GitHub repository, or by emailing as a .zip (_remember to exclude node_modules_).
+2. Then you can submit your application by adding [@mhouchin](https://github.com/mhouchin), [@frenomus](https://github.com/frenomus) and [@JamesWhite6](https://github.com/JamesWhite6) as collaborators to your GitHub repository, or by emailing as a .zip (_remember to exclude node_modules_).
