@@ -18,7 +18,7 @@ Write an application in TypeScript that:
 The investor holdings are located in `/data/holdings.json` with the format:
 ```
 {
-    "investorId": string,
+    "investorId": number,
     "investmentAccount": string,
     "balance": string
 }
