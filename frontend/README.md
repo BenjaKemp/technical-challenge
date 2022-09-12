@@ -27,7 +27,7 @@ https://raw.githubusercontent.com/AssetzSMECapital/technical-challenge/master/da
 And have the format:
 ```
 {
-    "investorId": string,
+    "investorId": number,
     "investmentAccount": string,
     "balance": string
 }
