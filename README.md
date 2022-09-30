@@ -15,4 +15,4 @@ Feel free to use any libraries/packages that you wish and remember the goal of t
 ## Submitting Your Task
 
 1. Please answer the questions in [FOLLOW-UP.md](./FOLLOW-UP.md) file
-2. Then you can submit your application by adding [@mhouchin](https://github.com/mhouchin), [@frenomus](https://github.com/frenomus) and [@JamesWhite6](https://github.com/JamesWhite6) as collaborators to your GitHub repository, or by emailing as a .zip (_remember to exclude node_modules_).
+2. Then you can submit your application by adding [@mhouchin](https://github.com/mhouchin) and [@frenomus](https://github.com/frenomus) as collaborators to your GitHub repository, or by emailing as a .zip (_remember to exclude node_modules_).
