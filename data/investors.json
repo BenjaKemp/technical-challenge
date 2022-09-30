@@ -1,0 +1,26 @@
+[
+  {
+    "investorId": 1,
+    "investorName": "Luke"
+  },
+  {
+    "investorId": 2,
+    "investorName": "Leia"
+  },
+  {
+    "investorId": 3,
+    "investorName": "Han"
+  },
+  {
+    "investorId": 4,
+    "investorName": "Chewbacca"
+  },
+  {
+    "investorId": 5,
+    "investorName": "See-Threepio"
+  },
+  {
+    "investorId": 6,
+    "investorName": "Artoo-Detoo"
+  }
+]
