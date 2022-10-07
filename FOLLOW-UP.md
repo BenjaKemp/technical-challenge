@@ -12,6 +12,10 @@
 
 
 
+### Q. Which part of the challenge did you find most difficult? And why?
+
+
+
 ### Q. If a stakeholder was present, what questions might you ask them?
 
 

@@ -2,7 +2,7 @@
 
 This is the backend technical challenge for candidates applying for an engineering role at Assetz Capital.
 
-Please also read the [guidance](../#guidance) and instructions for [submitting your task](../#submitting-your-task).
+Please also read the [guidance](../README.md#guidance) and instructions for [submitting your task](../README.md#submitting-your-task).
 
 ## Task
 
@@ -18,6 +18,7 @@ Write an application in TypeScript that:
 The investor holdings are located in `/data/holdings.json` with the format:
 ```
 {
+    "id": number,
     "investorId": number,
     "investmentAccount": string,
     "balance": string
@@ -27,6 +28,7 @@ The investor holdings are located in `/data/holdings.json` with the format:
 The investment account rates are located in `/data/rates.json` with the format:
 ```
 {
+    "id": number,
     "investmentAccount": string, 
     "annualRate": number
 }

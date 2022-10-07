@@ -1,26 +1,32 @@
 [
   {
-    "investorId": 1,
-    "investorName": "Luke"
+    "id": 1,
+    "name": "Luke",
+    "riskLevel": 0.20
   },
   {
-    "investorId": 2,
-    "investorName": "Leia"
+    "id": 2,
+    "name": "Leia",
+    "riskLevel": 0.05
   },
   {
-    "investorId": 3,
-    "investorName": "Han"
+    "id": 3,
+    "name": "Han",
+    "riskLevel": 0.70
   },
   {
-    "investorId": 4,
-    "investorName": "Chewbacca"
+    "id": 4,
+    "name": "Chewbacca",
+    "riskLevel": 0.15
   },
   {
-    "investorId": 5,
-    "investorName": "See-Threepio"
+    "id": 5,
+    "name": "See-Threepio",
+    "riskLevel": 0.33
   },
   {
-    "investorId": 6,
-    "investorName": "Artoo-Detoo"
+    "id": 6,
+    "name": "Artoo-Detoo",
+    "riskLevel": 0.64
   }
 ]
