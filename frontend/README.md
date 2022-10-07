@@ -12,10 +12,10 @@ Write a frontend application in TypeScript that Fetches and displays
 1. Having a responsive layout.
 2. Having the following filters:
    1. Investor `riskLevel` range filter (min/max value)
-   2. Investor holdings `Total` range filter (min/max value)
+   2. Investor holdings `Investor Total` range filter (min/max value)
 3. Having the following sorting:
-   1. Can sort asc/desc by `Annual Interest Due`
-   2. Can sort asc/desc by `Total`
+   1. Can sort asc/desc by `Investor Total`
+   2. Can sort asc/desc by `Investor Annual Interest Due`
    3. Can reset sorting
    4. We expect filters and sorting to be compatible with one another.
 5. Having a BoE (Bank of England) rate input field that should be applied on top of the investment account rate. Default BoE rate should be 2.25%
