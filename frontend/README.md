@@ -7,7 +7,7 @@ Please also read the [guidance](../README.md#guidance) and instructions for [sub
 
 ## Task
 
-Write a frontend application in TypeScript that Fetches and displays
+Write a frontend application in TypeScript that fetches (via an HTTP request) and displays
 [investor holdings](https://raw.githubusercontent.com/AssetzSMECapital/technical-challenge/master/data/holdings.json) while:
 1. Having a responsive layout
    - See desktop and mobile designs for guidance
