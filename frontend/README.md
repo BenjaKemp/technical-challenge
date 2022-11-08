@@ -9,36 +9,29 @@ Please also read the [guidance](../README.md#guidance) and instructions for [sub
 
 Write a frontend application in TypeScript that Fetches and displays
 [investor holdings](https://raw.githubusercontent.com/AssetzSMECapital/technical-challenge/master/data/holdings.json) while:
-1. Having a responsive layout.
+1. Having a responsive layout
+   - See desktop and mobile designs for guidance
 2. Having the following filters:
-   1. Investor `riskLevel` range filter (min/max value)
-   2. Investor holdings `Investor Total` range filter (min/max value)
+   - Investor `riskLevel` range (min/max value)
+   - Investor holdings `Investor Total` range (min/max value)
 3. Having the following sorting:
-   1. Can sort asc/desc by `Investor Total`
-   2. Can sort asc/desc by `Investor Annual Interest Due`
-   3. Can reset sorting
-   4. We expect filters and sorting to be compatible with one another.
-5. Having a BoE (Bank of England) rate input field that should be applied on top of the investment account rate. Default BoE rate should be 2.25%
+   - Asc/desc by the `Investor Total`
+   - Asc/desc by the investors' `name`
+   - Default/no sorting
+   - **Note:** filters and sorting should be compatible with one another.
+4. Having a BoE (Bank of England) rate input field that should be applied on top of the investment account rate. 
+   - The default BoE rate should be 2.25%
+   - **Note:** The BoE rate should be applied to all interest rates before making
+     any calculations. In the mockup this is shown as `${annualRate}` and
+     anywhere a percentage is shown such as `TB1 (x.xx%)`
+5. A summary section containing;
+   - The `Investor Total`, sum of all investor holdings (after
+     filters)
+   - The `Total annual interest due`, sum of all intrest due (after
+       filters)
 
-
-|                                  | `${investmentAccount} (${annualRate}%)`   | ... | Investor Total [^1] | Investor Annual Interest Due [^2] |
-|----------------------------------|-------------------------------------------|-----|---------------------|-----------------------------------|
-| `${investor.name}`               | `${holding.balance}`                      |     | £                   | £                                 |
-| ...                              |                                           |     |                     |                                   |
-| Account Total [^3]               | £                                         |     | £                   | £                                 |
-| Account Annual Interest Due [^4] | £                                         |     | £                   | -                                 |
-
-[^1]:`Investor Total` = Sum of all holdings for each investor
-
-[^2]:`Investor Annual Interest Due` = Annual interest due to each investor based on their total holdings and interest rates (`annualRate` + `BoE`).
-
-[^3]:`Account Total` = Sum of all holdings for each investment account type
-
-[^4]:`Account Annual Interest Due` = Annual interest due for each investment account type based on total holdings and interest rates (`annualRate` + `BoE`).
-
-
-Don't worry about making a dazzling interface, basic aesthetics are welcome, but we're not assessing your design skills.
-
+You do not need to implement the design exactly, but it should be similar in
+appearance and layout. You may use any libraries or frameworks that you wish.
 
 ### API Information
 
@@ -81,3 +74,13 @@ And have the format:
     "annualRate": number
 }
 ```
+
+### Designs
+
+#### Desktop layout
+
+![Desktop layout](./assets/Desktop.png)
+
+#### Mobile layout
+
+![Mobile layout](./assets/Mobile.png)
