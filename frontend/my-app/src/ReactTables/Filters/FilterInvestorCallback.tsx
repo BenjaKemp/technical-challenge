@@ -1,7 +1,3 @@
 export const FilterInvestorCallBack = (rows:any, columnIds:any, filterValue:any) => {
-
-    console.log('rows    ',rows)
-    console.log('columnIds    ',columnIds)
-    console.log('filterValue    ',filterValue)
-    
+    return rows.filter((row: any) => (filterValue[0] < row.values[columnIds]) && (filterValue[1] > row.values[columnIds]))
 }

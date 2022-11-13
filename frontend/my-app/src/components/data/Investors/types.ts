@@ -1,8 +1,8 @@
 import { AccountData, Investor, Holding } from '../../Dashboard/types';
 
-export interface InvestorHolidings extends Investor {
+export interface InvestorHoldings extends Investor {
     holdings: Record<string, string> 
 }
-export type InvestorsState = { [key: string]: InvestorHolidings }
+export type InvestorsState = { [key: string]: InvestorHoldings }
 
 

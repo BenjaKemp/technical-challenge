@@ -2,7 +2,11 @@
 
 @import './utilities/variables'; 
 
+@import './base/reset'; 
+
 @import './components/Dashboard'; 
 @import './components/Filters'; 
 @import './components/Header'; 
 @import './components/Investor'; 
+@import './components/Account'; 
+@import './components/Sliders'; 

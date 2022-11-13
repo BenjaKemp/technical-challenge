@@ -1,0 +1,53 @@
+.Slider {
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    padding: 0px 10px;
+    &__label {
+        font-size: 16px;
+        margin: 15px 0px;
+    }
+    &__horizontal {
+        display: flex;
+        width: 100%;
+        height: 10px;
+        border-radius: 5px;
+
+        .horizontal-track {
+            height: 10px;
+            position: relative;
+            background: darken($assetz-charcoal-light, 30%);
+            border-radius: 5px;
+            &.horizontal-track-1 {
+                background: $assetz-charcoal-light;
+            }
+            &.horizontal-track-2 {
+                background: lighten($assetz-charcoal-light, 30%);
+            }
+        }
+        &.horizontal-thumb {
+            width: 50px;
+            height: 48px;
+            line-height: 38px;
+            width: 35px;
+            border-radius: 10px;
+        }
+    }
+
+    .horizontal-thumb {
+        font-size: 0.9em;
+        text-align: center;
+        background-color: $assetz-charcoal-light;;
+        color: $assetz-white;
+        cursor: pointer;
+        border: 5px solid $assetz-charcoal;
+        box-sizing: border-box;
+        min-width: 35px;
+        border-radius: 10px;
+        bottom: -10px;
+        &.active {
+            background-color: $assetz-charcoal;
+        }
+    }
+
+}

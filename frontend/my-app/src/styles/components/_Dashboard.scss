@@ -1,0 +1,18 @@
+.Dashboard {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    &__BOE {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__BOE-header {
+   
+    }
+    &__BOE-input {
+        width: 200px;
+   
+    }
+
+    
+}
