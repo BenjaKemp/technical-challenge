@@ -1,7 +1,6 @@
 
-import { useEffect, useState, useMemo } from 'react'
-import { InvestorHoldings, InvestorsState } from './types'
-import { AccountData, Investor, Rate } from '../../Dashboard/types';
+import {  useMemo } from 'react'
+import { Rate } from '../../Dashboard/types';
 import { useTable, useFilters, useSortBy } from 'react-table'
 import { CustomSlider } from '../../../ReactTables/Filters/CustomSlider'
 import { FilterInvestorCallBack } from '../../../ReactTables/Filters/FilterInvestorCallback'

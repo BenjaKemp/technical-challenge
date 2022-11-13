@@ -1,5 +1,5 @@
-import { AccountData, DashboardState, InvestorsProps, Investor, Rate, InvestorHoldings, AccountProps, Holding } from './types'
-import { useEffect, useState, KeyboardEvent } from 'react';
+import { AccountData, DashboardState, InvestorsProps, Investor, Rate, InvestorWithHoldings, AccountReceivedProps, Holding } from './types'
+import { useEffect, useState } from 'react';
 import Investors from '../data/Investors'
 import Account from '../data/Account'
 import { extensions, base } from './constants';
@@ -14,7 +14,7 @@ const Dashboard: React.FC = () => {
     rates: []
   });
   const [investorsProps, setInvestors] = useState<InvestorsProps>({})
-  const [accountProps, setAccounts] = useState<any>({})
+  const [accountProps, setAccounts] = useState<AccountReceivedProps>({} as AccountReceivedProps)
   const [bankOfEnglandInterest, setBankOfEnglandInterest] = useState<number>(2.25)
 
   const callAPi = async (url: string) => {
@@ -42,10 +42,11 @@ const Dashboard: React.FC = () => {
 
   // creating new data
   useEffect(() => {
+    
     const { investors, holdings, rates } = state;
     let holdingsClone = [...holdings]
 
-    let accountProps: AccountProps = {} as AccountProps;
+    let accountProps: AccountReceivedProps = {} as AccountReceivedProps;
     const investorsWithAccounts: InvestorsProps = investors.reduce((acc: InvestorsProps, investor: Investor) => {
 
       const investorHoldings = holdings.filter(holding => holding.investorId === investor.id)
@@ -65,9 +66,10 @@ const Dashboard: React.FC = () => {
       acc[investor.name] = {
         ...investor,
         holdings: investorHoldingsBalance
-      } as InvestorHoldings;
+      } as InvestorWithHoldings;
       return acc;
     }, {});
+
     setAccounts(accountProps)
     setInvestors(investorsWithAccounts)
   }, [state]);
@@ -77,20 +79,18 @@ const Dashboard: React.FC = () => {
     if (parseInt(e.target.value) < parseInt(e.target.min)) {
       setBankOfEnglandInterest(+e.target.min)
     }
-    if (parseInt(e.target.value) > parseInt(e.target.max)) {
-
-    
-      console.log('shou be here   ',+e.target.max)
+    else if (parseInt(e.target.value) > parseInt(e.target.max)) {
       setBankOfEnglandInterest(+e.target.max)
+    } else {
+      setBankOfEnglandInterest(+e.target.value)
     }
-    setBankOfEnglandInterest(+e.target.value)
 
   }
 
   return (
     <div className='Dashboard'>
       <Investors investorsProps={investorsProps} rates={state.rates} />
-      <Account {...state} accountProps={accountProps} />
+      <Account accountProps={accountProps} bankOfEnglandInterest={bankOfEnglandInterest}/>
       <div className="Dashboard__BOE">
         <h3 className="Dashboard__BOE-header">Investment Total</h3>
         <label htmlFor="BOE rate">BoE Rate (%)</label>

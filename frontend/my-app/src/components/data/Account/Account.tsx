@@ -1,13 +1,17 @@
-import { AccountData } from '../../Dashboard/types';
-import { useEffect, useState, useMemo } from 'react'
-import { useTable, useFilters, useSortBy, Column } from 'react-table'
+import { AccountReceivedProps } from '../../Dashboard/types';
+import { useMemo } from 'react'
+import { useTable, useFilters, useSortBy } from 'react-table'
 
-interface AccountProps extends AccountData {
-  accountProps: any
+
+interface AccountsData {
+  bankOfEnglandInterest: number;
+  accountProps: AccountReceivedProps
 }
 
-const Account: React.FC<AccountProps> = ({ investors, holdings, rates, accountProps }): JSX.Element => {
+const Account: React.FC<AccountsData> = ({ accountProps, bankOfEnglandInterest}): JSX.Element => {
 
+
+  console.log('accountProps====>   ',accountProps)
   const columns = useMemo(
     () => [
       {
@@ -24,14 +28,20 @@ const Account: React.FC<AccountProps> = ({ investors, holdings, rates, accountPr
       }
     ], []
   )
+
+  const keys = Object.keys(accountProps) as (keyof AccountReceivedProps)[];
+
+ 
   const data = useMemo(
     () => [
-      ...Object.keys(accountProps).map((account) => ({
+      ...keys.map((account) => {
+        return {
           col0: account,
-          col1: accountProps[account]['total'],
-          col2: (accountProps[account]['total'] * (1 - (accountProps[account]['annualRate'] / 100))).toFixed(2),
-      }))
-    ], [accountProps])
+          col1: `£ ${accountProps[account]['total'].toFixed(2)}`,
+          col2: `£ ${(accountProps[account]['total'] * ((accountProps[account]['annualRate'] + bankOfEnglandInterest) / 100)).toFixed(2)}`,
+        }
+      })
+    ], [accountProps, bankOfEnglandInterest])
 
   const initialState = {};
 
